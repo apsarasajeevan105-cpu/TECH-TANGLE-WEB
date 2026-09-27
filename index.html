@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TECH TANGLE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         START SCREEN
+         ========================= -->
+
+    <div id="start-screen" class="game-container">
+
+        <h1 class="title">
+            TECH TANGLE
+        </h1>
+
+        <h2 class="subtitle">
+            ECE WORD CHALLENGE
+        </h2>
+
+        <p class="tagline">
+            Unscramble the word before the time runs out!
+        </p>
+
+        <button id="start-button">
+            START GAME
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         GAME SCREEN
+         ========================= -->
+
+    <div id="game-screen" class="hidden">
+
+        <!-- Header -->
+
+        <div class="game-header">
+
+            <div class="game-title">
+                TECH TANGLE
+            </div>
+
+            <!-- Question progress dots -->
+
+            <div id="progress-dots" class="progress-dots"></div>
+
+        </div>
+
+
+        <!-- Score card -->
+
+        <div class="info-card score-card">
+
+            <div class="card-label">
+                SCORE
+            </div>
+
+            <div id="score-value" class="card-value">
+                0
+            </div>
+
+        </div>
+
+
+        <!-- Timer card -->
+
+        <div class="info-card timer-card">
+
+            <div class="card-label">
+                TIME LEFT
+            </div>
+
+            <div id="timer-value" class="card-value timer-value">
+                10s
+            </div>
+
+        </div>
+
+
+        <!-- Timer bar -->
+
+        <div class="timer-bar-background">
+
+            <div id="timer-bar" class="timer-bar"></div>
+
+        </div>
+
+
+        <!-- Main question card -->
+
+        <div class="question-card">
+
+            <div class="section-label">
+                UNSCRAMBLE THE WORD
+            </div>
+
+
+            <!-- Jumbled letters will appear here -->
+
+            <div id="letter-tiles" class="letter-tiles"></div>
+
+
+            <div class="answer-label">
+                ENTER YOUR ANSWER
+            </div>
+
+
+            <input
+                type="text"
+                id="answer-input"
+                class="answer-input"
+                autocomplete="off"
+            >
+
+
+            <br>
+
+
+            <button id="check-button" class="check-button">
+                CHECK ANSWER
+            </button>
+
+
+            <!-- Result message -->
+
+            <div id="result-banner" class="result-banner hidden"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         GAME OVER SCREEN
+         ========================= -->
+
+    <div id="end-screen" class="end-screen hidden">
+
+        <div class="end-title">
+            GAME IS OVER
+        </div>
+
+        <div id="final-score" class="end-score">
+            YOUR SCORE : 0 / 10
+        </div>
+
+        <div class="end-thanks">
+            Thank you for being a part of this event!<br>
+            We hope you enjoyed the challenge 🎉🎉
+        </div>
+
+        <button id="play-again-button">
+            PLAY AGAIN
+        </button>
+
+    </div>
+
+
+    <!-- JavaScript will be connected here later -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
